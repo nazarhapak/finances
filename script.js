@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   // Update date
   const updateDate = () => {
     if (spend === 0) {
-      date.value = "";
+      date.value = "2025-01-01";
     } else {
       date.value = getDate(Number(uah + usd + eur) / spend);
     }
