@@ -1,6 +1,5 @@
 const fetchExchangeRates = async () => {
-  const { API_KEY } = process.env;
-  const res = await fetch(`https://v6.exchangerate-api.com/v6/${API_KEY}/latest/UAH`);
+  const res = await fetch(`https://v6.exchangerate-api.com/v6/067894e1e27364f287083edc/latest/UAH`);
   const data = await res.json();
   const rateUSD = Number(data.conversion_rates.USD);
   const rateEUR = Number(data.conversion_rates.EUR);
