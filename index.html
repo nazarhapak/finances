@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Finances</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Finances</h1>
+      <p class="description">calculate your expenses wisely</p>
+    </header>
+    <main>
+      <div class="container flex">
+        <div>
+          <div class="assets-container">
+            <p class="text">Enter your assets:</p>
+            <div>
+              <div class="asset">
+                <input type="number" id="uah-amount" class="amount" value="0" />
+                <label for="uah-amount" class="currency">uah</label>
+              </div>
+              <div class="currency-converter">
+                <div class="asset">
+                  <input type="number" id="usd-amount" class="amount" value="0" />
+                  <label for="usd-amount" class="currency">usd</label>
+                </div>
+                <span class="equal-sign">=</span>
+                <p class="converted-asset" id="usd-converted">0 UAH</p>
+              </div>
+              <div class="currency-converter">
+                <div class="asset">
+                  <input type="number" id="eur-amount" class="amount" value="0" />
+                  <label for="eur-amount" class="currency">eur</label>
+                </div>
+                <span class="equal-sign">=</span>
+                <p class="converted-asset" id="eur-converted">0 UAH</p>
+              </div>
+            </div>
+          </div>
+          <div class="total-container">
+            <p class="text">You have total of:</p>
+            <p class="text text-total" id="total">0 UAH</p>
+          </div>
+        </div>
+
+        <aside class="svg-container">
+          <img class="svg" src="img/man-next-to-the-board.svg" alt="A vector graphic of man explaining finances on whiteboard." />
+        </aside>
+      </div>
+      <div class="container">
+        <div class="spend-container">
+          <p class="text">If you spend</p>
+          <div class="asset spend">
+            <input type="number" id="spend-amount" class="amount spend" value="0" />
+            <label for="spend-amount" class="currency">UAH/week</label>
+          </div>
+        </div>
+        <p class="text">You don't have to worry about money until <input type="date" class="date" id="date" /></p>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
