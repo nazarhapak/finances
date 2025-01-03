@@ -201,10 +201,20 @@ input.amount:focus-visible {
   .svg-container {
     display: none;
   }
-}
 
-@media (max-width: 26em) {
   .spend-container {
-    display: block;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.4rem;
+  }
+
+  .asset.spend {
+    display: flex;
+    margin-bottom: 1.2rem;
+  }
+
+  .asset.spend .currency {
+    padding: 0.8rem 1rem;
+    font-size: 2rem;
   }
 }
